@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale: 1.0, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <title>Buff Bunny</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo"></div>
+        <div class="links">
+            <a href="https://discord.com/invite/qkQdpEuFrG">
+                <i class="icon fa-brands fa-discord"></i>
+                Discord
+            </a>
+            <a href="https://twitter.com/BuffBunnyNFT">
+                <i class="icon fa-brands fa-x-twitter"></i>
+                Twitter
+            </a>
+            <span class="links-group">
+                <span class="label">Documents</span>
+                <div class="sublinks">
+                    <a href="https://buffbunny-com.gitbook.io/buffbunny/">Documents 1</a>
+                    <a href="https://buffbunny.gitbook.io/buff-map-year-2">Documents 2</a>
+                </div>
+            </span>
+            <a href="https://staking.etakit.in/adults-v2">Staking</a>
+            <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=CuDt8dCNyExZpeNwWW9uc7NgbfZcCXPL6o3ZjZLQNVuu&fixed=in">Buy Buff Raydium</a>
+            <a href="https://birdeye.so/token/CuDt8dCNyExZpeNwWW9uc7NgbfZcCXPL6o3ZjZLQNVuu?chain=solana">Buff Chart</a>
+        </div>
+    </div>
+    <div class="navbar-mobile">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="main">
+        <div class="screen one">
+            <div class="season one">
+                <div class="overlay">Season One</div>
+                <div class="overlay-links">
+                    <a href="https://teens.buffbunny.net/ ">evolve baby to a teen</a>
+                    <a href="https://adults.buffbunny.net/">evolve teens to adult</a>
+                    <a href="https://females.buffbunny.net/">females mint</a>
+                    <a href="https://magiceden.io/marketplace/buffbunnybaby?activeTab=items">babies ME</a>
+                    <a href="https://magiceden.io/marketplace/teens_bunny">teens ME</a>
+                    <a href="https://magiceden.io/marketplace/adult_buff_bunny">adults ME</a>
+                    <a href="https://magiceden.io/marketplace/fbbv1">females ME</a>
+                </div>
+            </div>
+            <div class="season two">
+                <div class="overlay">Season Two</div>
+                <div class="overlay-links">
+                    <a href="https://babyv2.buffbunny.net/">breeding</a>
+                    <a href="https://teensv2.buffbunny.net/">babies to teens</a>
+                    <a href="https://adults-v2.buffbunny.net/">teens to adults</a>
+                    <a href="https://magiceden.io/marketplace/bbb-v2">babies ME</a>
+                    <a href="https://magiceden.io/marketplace/tbbv2">teens ME</a>
+                    <a href="https://magiceden.io/marketplace/abbv2">adults ME</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const navbarMobileBtn = document.querySelector('.navbar-mobile');
+        navbarMobileBtn.addEventListener('click', () => {
+            const navbar = document.querySelector('.navbar');
+            const display = navbar.style.display;
+            navbar.style.display = display == 'flex' ? 'none' : 'flex';
+        });
+    </script>
+</body>
+
+</html>
