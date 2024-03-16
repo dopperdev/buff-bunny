@@ -5,7 +5,7 @@ body {
     font-family: "Nova Slim", system-ui;
     font-weight: 400;
     font-style: normal;
-    background-image: url(/images/background.png);
+    background-image: url(../images/background.png);
     background-size: cover;
 }
 
@@ -41,7 +41,7 @@ body {
 .navbar .logo {
     width: 75px;
     height: 75px;
-    background-image: url(/images/logo.png);
+    background-image: url(../images/logo.png);
     background-size: cover;
 }
 
@@ -127,12 +127,12 @@ body {
 }
 
 .screen.one .season.one {
-    background-image: url(/images/season1.png);
+    background-image: url(../images/season1.png);
     animation: swipe-left 2s;
 }
 
 .screen.one .season.two {
-    background-image: url(/images/season2.png);
+    background-image: url(../images/season2.png);
     animation: swipe-right 2s;
 }
 
