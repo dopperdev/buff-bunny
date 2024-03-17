@@ -129,12 +129,12 @@ body {
 
 .screen.one .season.one {
     background-image: url(../images/season1.png);
-    animation: swipe-left 2s;
+    animation: swipe-left 2.5s;
 }
 
 .screen.one .season.two {
     background-image: url(../images/season2.png);
-    animation: swipe-right 2s;
+    animation: swipe-right 2.5s;
 }
 
 .screen.one .season .overlay {
