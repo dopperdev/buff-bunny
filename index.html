@@ -71,8 +71,16 @@
         navbarMobileBtn.addEventListener('click', () => {
             const navbar = document.querySelector('.navbar');
             const display = navbar.style.display;
-            navbar.style.display = display == 'block' ? 'none' : 'block';
+            navbar.style.display = display == 'flex' ? 'none' : 'flex';
         });
+
+        const seasons = document.querySelectorAll('.season');
+        seasons.forEach(season => {
+            season.addEventListener('click', () => {
+                seasons.forEach(season => season.classList.remove('active'));
+                season.classList.add('active');
+            });
+        })
     </script>
 </body>
 

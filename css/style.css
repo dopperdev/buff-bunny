@@ -74,7 +74,7 @@ body {
 }
 
 .navbar .links .links-group:hover .sublinks,
-.navbar .links .links-group:focus .sublinks {
+.navbar .links .links-group.active .sublinks {
     display: block;
 }
 
@@ -82,7 +82,6 @@ body {
 .navbar .links .links-group {
     color: #FFF;
     text-decoration: none;
-    height: 100%;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -179,18 +178,18 @@ body {
 }
 
 .screen.one .season:hover,
-.screen.one .season:focus {
+.screen.one .season.active {
     transform: scale(1.05);
 }
 
 .screen.one .season:hover .overlay-links,
-.screen.one .season:focus .overlay-links {
+.screen.one .season.active .overlay-links {
     opacity: 1;
     visibility: visible;
 }
 
 .screen.one .season:hover .overlay-links a,
-.screen.one .season:focus .overlay-links a {
+.screen.one .season.active .overlay-links a {
     margin: 2px 0;
     padding: 5px 12px;
 }
@@ -236,6 +235,15 @@ body {
     .navbar .links {
         flex-direction: column;
         padding-left: 0;
+    }
+
+    .navbar .links .links-group {
+        flex-direction: column;
+    }
+
+    .navbar .links .links-group .sublinks {
+        display: block;
+        position: unset;
     }
 }
 
