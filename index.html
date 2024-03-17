@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, maximum-scale: 1.0, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css?ver=7" />
+    <link rel="stylesheet" href="css/style.css?ver=8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     <title>Buff Bunny</title>
@@ -30,7 +30,9 @@
                 </div>
             </span>
             <a href="https://staking.etakit.in/adults-v2">Staking</a>
-            <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=CuDt8dCNyExZpeNwWW9uc7NgbfZcCXPL6o3ZjZLQNVuu&fixed=in">Buy Buff Raydium</a>
+            <a
+                href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=CuDt8dCNyExZpeNwWW9uc7NgbfZcCXPL6o3ZjZLQNVuu&fixed=in">Buy
+                Buff Raydium</a>
             <a href="https://birdeye.so/token/CuDt8dCNyExZpeNwWW9uc7NgbfZcCXPL6o3ZjZLQNVuu?chain=solana">Buff Chart</a>
         </div>
     </div>
@@ -76,9 +78,16 @@
 
         const seasons = document.querySelectorAll('.season');
         seasons.forEach(season => {
-            season.addEventListener('click', () => {
+            season.addEventListener('touchstart', () => {
                 seasons.forEach(season => season.classList.remove('active'));
                 season.classList.add('active');
+                window.requestAnimationFrame(() => {
+                    window.scroll({
+                        top: season.offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+                console.log(season.offsetTop);
             });
         })
     </script>
