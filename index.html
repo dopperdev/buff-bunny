@@ -78,7 +78,7 @@
 
         const seasons = document.querySelectorAll('.season');
         seasons.forEach(season => {
-            season.addEventListener('touchend', () => {
+            season.addEventListener('touchstart', () => {
                 seasons.forEach(season => season.classList.remove('active'));
                 season.classList.add('active');
                 window.requestAnimationFrame(() => {
