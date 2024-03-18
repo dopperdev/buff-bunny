@@ -64,6 +64,7 @@ body {
 .navbar .links a:hover {
     background-color: #FFF;
     color: #000;
+    transform: skewX(15deg);
 }
 
 .navbar .links .links-group .sublinks {
@@ -86,6 +87,7 @@ body {
     align-items: center;
     cursor: pointer;
     padding: 10px;
+    transition: background-color .5s, color .5s, transform .5s;
 }
 
 .navbar .links .links-group a {
@@ -175,6 +177,7 @@ body {
     width: 70%;
     text-align: center;
     transition: margin .5s, padding .5s, height .5s, visibility .5s;
+    transform: skewX(15deg);
 }
 
 .screen.one .season:hover,
